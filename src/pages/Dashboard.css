@@ -1,0 +1,23 @@
+.dashboard {
+    position:inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: auto;
+    height: 90vh;
+    background-color: rgb(221, 231, 124);
+}
+
+.dashboard div{
+    height: 200px;
+    width: 200px;
+    font-size: 1rem;
+    background-color: rgb(197, 143, 248);
+}
+
+.dashboard h1 {
+    align-content: center;
+}

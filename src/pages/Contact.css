@@ -1,0 +1,11 @@
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    transition: 350ms;
+}
+.contact.enabled{
+    margin-left: 250px;
+    transition: 350ms;
+}

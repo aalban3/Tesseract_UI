@@ -1,10 +1,13 @@
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom';
-import * as FaIcons from 'react-icons/fa'
-import * as AiIcons from 'react-icons/ai'
 import {SidebarMenu} from './SidebarMenu'
 import './Sidebar.css'
 import {IconContext} from 'react-icons'
+import {Switch, Route} from 'react-router-dom';
+import Dashboard from '../pages/Dashboard';
+import Contact from '../pages/Contact';
+import About from '../pages/About';
+import Toolbar from './Toolbar'
 
 function Sidebar() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false)
@@ -12,30 +15,38 @@ function Sidebar() {
     const showSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen)
     } 
+
+    const RenderMenuItems = () => {
+        const items = SidebarMenu.map((item,index) => {
+            return (
+                <li key={index} className={item.className}>
+                    <Link to={item.path}> 
+                        {item.icon} 
+                        <span>{item.title}</span>
+                    </Link>
+                </li>
+            )
+        })
+        return items
+    }
     return (
         <>
             <IconContext.Provider value={{color:'#fff'}}>
-                <div className="Sidebar">
-                    <Link to="#" className="Sidebar-bars">
-                        <FaIcons.FaBars onClick={showSidebar} />
-                    </Link>
-                </div>
+                {/* tool bar */}
+                <Toolbar expandSidebar = {showSidebar} />
+                {/* Toggler logic */}
                 <nav className={isSidebarOpen ? "Sidebar-menu active": "Sidebar-menu"}>
                     <ul className="Sidebar-menu-items">
-                        {SidebarMenu.map((item,index) => {
-                            return (
-                                <li key={index} className={item.className}>
-                                    <Link to={item.path}> 
-                                    
-                                        {item.icon} 
-                                        <span>{item.title}</span>
-                                    </Link>
-                                </li>
-                            )
-                        })}
+                        {RenderMenuItems()}
                     </ul>
                 </nav>
             </IconContext.Provider>
+            {/* Route Switcher  */}
+            <Switch>
+                <Route path="/" exact render={() => <Dashboard isOpen={isSidebarOpen}/>}/>
+                <Route path="/contact" exact render={() => <Contact isOpen={isSidebarOpen}/>}/>
+                <Route path="/about" exact render={() => <About isOpen={isSidebarOpen}/>}/>
+            </Switch>
         </>
     )
 }

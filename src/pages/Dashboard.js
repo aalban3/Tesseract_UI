@@ -4,7 +4,7 @@ import './Dashboard.css'
 function Dashboard(props) {
     return (
         <>
-            <div className= "dashboard">
+            <div className= {props.isOpen ? "dashboard enabled" : "dashboard" }>
                 <div>A</div>
                 <div>B</div>
                 <div>C</div>

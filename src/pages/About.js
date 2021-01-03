@@ -1,8 +1,9 @@
 import React from 'react'
+import './About.css'
 
-function About() {
+function About(props) {
     return (
-        <div className='about'>
+        <div className={props.isOpen ? "about enabled" : "about" }>
             <h1>About Page</h1>
         </div>
     )

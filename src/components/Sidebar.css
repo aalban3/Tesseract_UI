@@ -1,16 +1,31 @@
-.Sidebar {
-    background-color: #060b26;
-    height: 5vh;
+.Toolbar {
+    background-color: #ffffff; 
+    height: 6vh;
+    position: relative;
     display: flex;
     justify-content: start;
     align-items: center;
+    transition: 350ms;
 }
 
-.Sidebar-bars {
+.Toolbar.enabled{
+    margin-left: 250px;
+    transition: 350ms;
+}
+.Toolbar-bars {
     margin-left: 2rem;
     font-size: 2rem;
     background: none;
+}
 
+.Toolbar img {
+    width: 40px;
+    height: 40px;
+    margin-left: 50%;
+}
+
+#Toolbar-toggler {
+    color: #060b26 !important;
 }
 
 .Sidebar-menu {
@@ -19,8 +34,8 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    position: fixed;
-    top:5vh;
+    position: absolute;
+    top:0;
     left: -100%;
     transition: 850ms;
 }

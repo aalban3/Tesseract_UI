@@ -1,0 +1,9 @@
+/****** SEARCHBAR EFFECTS *****/
+.Toolbar input {
+    color: #333;
+    letter-spacing: 1px;
+    margin-left: 450px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}  

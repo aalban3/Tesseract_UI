@@ -33,7 +33,7 @@ function Sidebar() {
         <>
             <IconContext.Provider value={{color:'#fff'}}>
                 {/* tool bar */}
-                <Toolbar expandSidebar = {showSidebar} />
+                <Toolbar expandSidebar = {showSidebar} isOpen = {isSidebarOpen}/>
                 {/* Toggler logic */}
                 <nav className={isSidebarOpen ? "Sidebar-menu active": "Sidebar-menu"}>
                     <ul className="Sidebar-menu-items">

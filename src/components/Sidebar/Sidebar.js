@@ -4,10 +4,10 @@ import {SidebarMenu} from './SidebarMenu'
 import './Sidebar.css'
 import {IconContext} from 'react-icons'
 import {Switch, Route} from 'react-router-dom';
-import Dashboard from '../pages/Dashboard';
-import Contact from '../pages/Contact';
-import About from '../pages/About';
-import Toolbar from './Toolbar'
+import Dashboard from '../../pages/Dashboard/Dashboard';
+import Contact from '../../pages/Contact/Contact';
+import About from '../../pages/About/About';
+import Toolbar from '../Toolbar/Toolbar'
 
 function Sidebar() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false)

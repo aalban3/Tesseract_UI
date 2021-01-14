@@ -1,7 +1,7 @@
-.dashboard {
+.Dashboard {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     flex-wrap: wrap;
     text-align: center;
@@ -9,18 +9,19 @@
     transition: 350ms;
 }
 
-.dashboard.enabled{
+.Dashboard.enabled{
     margin-left: 250px;
     transition: 350ms;
 }
 
-.dashboard div{
-    height: 200px;
-    width: 200px;
+.Dashboard div{
+    height: 400px;
+    width: 400px;
     font-size: 1rem;
-    background-color: rgb(197, 143, 248);
+    margin: 1rem auto;
+    background-color: rgb(179, 179, 179);
 }
 
-.dashboard h1 {
-    align-content: center;
+.Dashboard h1 {
+    align-content:flex-end;
 }

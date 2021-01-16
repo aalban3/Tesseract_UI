@@ -15,14 +15,14 @@
 }
 
 .Dashboard div{
-    height: 200px;
-    width: 200px;
+    height: 46%;
+    width: 46%;
     font-size: 5rem;
     margin: 1rem auto;
     background-color: rgb(179, 179, 179);
 }
 
-.Dashboard-Trends{
+/* .Dashboard-Trends{
     flex-grow: 1;
     width: 250px !important;
 }
@@ -36,4 +36,4 @@
 .Dashboard-Classifier{
     flex-grow: 1;
     align-self: flex-end;
-}
+} */

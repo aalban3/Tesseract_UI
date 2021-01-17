@@ -1,8 +1,8 @@
 .Dashboard {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-around;
+    justify-content:space-evenly;
+    align-items:stretch;
     flex-wrap: wrap;
     text-align: center;
     height: 90vh;
@@ -14,26 +14,37 @@
     transition: 350ms;
 }
 
-.Dashboard div{
-    height: 46%;
-    width: 46%;
+.Dashboard-Overview{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 48%;
+    width: 48%;
     font-size: 5rem;
-    margin: 1rem auto;
     background-color: rgb(179, 179, 179);
 }
-
-/* .Dashboard-Trends{
-    flex-grow: 1;
-    width: 250px !important;
-}
-.Dashboard-Overview{
-    flex-grow: 1;
-    width: 200px !important;
-}
-.Dashboard-Trends{
-    flex-grow: 1;
+.Dashboard-Overview div{
+    width: 10%;
+    height: 20%;
+    font-size: 1rem;
+    background-color: rgb(70, 70, 70);
 }
 .Dashboard-Classifier{
-    flex-grow: 1;
-    align-self: flex-end;
-} */
+    height: 48%;
+    width: 48%;
+    font-size: 5rem;
+    background-color: rgb(179, 179, 179);
+}
+.Dashboard-Trends{
+    height: 48%;
+    width: 48%;
+    font-size: 5rem;
+    background-color: rgb(179, 179, 179);
+}
+.Dashboard-News{
+    height: 48%;
+    width: 48%;
+    font-size: 5rem;
+    background-color: rgb(179, 179, 179);
+}

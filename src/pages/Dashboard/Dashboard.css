@@ -14,7 +14,7 @@
     transition: 350ms;
 }
 
-.Dashboard-Overview{
+.Dashboard-Classifier{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -22,29 +22,32 @@
     height: 48%;
     width: 48%;
     font-size: 5rem;
-    background-color: rgb(179, 179, 179);
+    background-color: rgb(224, 224, 224);
 }
-.Dashboard-Overview div{
-    width: 10%;
-    height: 20%;
+.Dashboard-Classifier div{
+    width: 30%;
+    height: 50%;
     font-size: 1rem;
     background-color: rgb(70, 70, 70);
 }
-.Dashboard-Classifier{
+.Dashboard-Overview{
     height: 48%;
     width: 48%;
     font-size: 5rem;
-    background-color: rgb(179, 179, 179);
+    background-color: rgb(224, 224, 224);
+
 }
 .Dashboard-Trends{
     height: 48%;
     width: 48%;
     font-size: 5rem;
-    background-color: rgb(179, 179, 179);
+    background-color: rgb(224, 224, 224);
+
 }
 .Dashboard-News{
     height: 48%;
     width: 48%;
     font-size: 5rem;
-    background-color: rgb(179, 179, 179);
+    background-color: rgb(224, 224, 224);
+
 }
